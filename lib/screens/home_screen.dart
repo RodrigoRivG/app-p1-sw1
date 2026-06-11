@@ -67,7 +67,7 @@ class HomeScreenState extends State<HomeScreen>
 
     try {
       final uri = Uri.parse(
-        'https://sw1-p1-backend2-123084394988.southamerica-east1.run.app/api/procedures/by-email?email=${Uri.encodeComponent(email)}',
+        'https://sw1-p2-backend.onrender.com/api/procedures/by-email?email=${Uri.encodeComponent(email)}',
       );
       final response = await http.get(
         uri,

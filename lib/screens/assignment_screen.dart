@@ -134,7 +134,7 @@ class _AssignmentScreenState extends State<AssignmentScreen>
     });
 
     try {
-      final uri = Uri.parse('http://192.168.0.14:8080/api/policies/assign-policy');
+      final uri = Uri.parse('https://sw1-p2-backend.onrender.com/api/policies/assign-policy');
       final response = await http.post(
         uri,
         headers: {'Content-Type': 'application/json'},
@@ -183,7 +183,7 @@ class _AssignmentScreenState extends State<AssignmentScreen>
     });
 
     try {
-      final uri = Uri.parse('http://10.0.2.2:8080/api/procedures');
+      final uri = Uri.parse('https://sw1-p2-backend.onrender.com/api/procedures');
       final response = await http.post(
         uri,
         headers: {'Content-Type': 'application/json'},
